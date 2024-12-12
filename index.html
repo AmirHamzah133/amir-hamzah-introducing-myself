@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="*:scroll-smooth" lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,54 +8,72 @@
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Funnel+Display:wght@300..800&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Noto+Serif+JP:wght@220..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+    * {
+        scroll-behavior: smooth;
+    }
 </style>
 
 </head>
 
 <body class="overflow-x-hidden *:font-primary">
 
-    <div class="fixed top-0 right-3 max-smaller:right-0 w-full px-8 py-6 shadow-sm bg-[#ffffff90] backdrop-blur-lg">
+
+    <div class="fixed top-0 right-3 max-smaller:right-0 w-full z-40 px-8 py-6 shadow-sm bg-[#ffffff90] backdrop-blur-lg">
         <nav class="flex justify-between items-center px-[4%]">
             
             <div class="right-0 flex justify-center">
-                <ul class="max-w-1/3 flex items-center gap-x-2 justify-center">
-                    <h1 class="font-bold text-lg">AmirHamzah.</h1>
-                    <h1 class="font-japan font-medium text-sm">アミー ハムザウ</h1>
+                <ul class="max-w-1/3 flex items-center gap-x-4 justify-center">
+                    <h1 class="font-extrabold text-lg">AmirHamzah.</h1>
+                    <h1 class="font-japan font-medium text-sm text-gray-400">アミー ハムザウ</h1>
                 </ul>
             </div>
             
-            <div>
-                <ul class="absolute top-4 right-0 border border-[#ffffff30] flex max-sm:px-1 max-sm:py-6 max-sm:flex-col items-center justify-center bg-primary rounded-full px-8 py-1 max-sm:top-[10vh]">
-                    <li class="text-white text-sm px-3 cursor-pointer rounded-t-lg py-1 w-full border-b-2 border-transparent hover:bg-gray-800 hover:border-b-2 hover:border-sky-500 hover:text-sky-400 transition duration-150 ease-in-out"><a href="#home"><svg class="" xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></a></li>
-                    <li class="text-white text-sm px-3 cursor-pointer rounded-t-lg py-1 w-full border-b-2 border-transparent hover:bg-gray-800 hover:border-b-2 hover:border-sky-500 hover:text-sky-400 transition duration-150 ease-in-out"><a href="#about"><svg class="" xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></a></li>
-                    <li class="text-white text-sm px-3 text-center cursor-pointer rounded-t-lg py-1 w-full border-b-2 border-transparent hover:bg-gray-800 hover:border-b-2 hover:border-sky-500 hover:text-sky-400 transition duration-150 ease-in-out"><a href="#contact"><svg class="" xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></a></li>
-                    <li class="text-white text-sm px-3 cursor-pointer rounded-t-lg py-1 w-full border-b-2 border-transparent hover:bg-gray-800 hover:border-b-2 hover:border-sky-500 hover:text-sky-400 transition duration-150 ease-in-out"><a href="#project"><svg class="" xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a></li>
-                    <li class="text-white text-sm px-3 cursor-pointer rounded-t-lg py-1 w-full border-b-2 border-transparent hover:bg-gray-800 hover:border-b-2 hover:border-sky-500 hover:text-sky-400 transition duration-150 ease-in-out"><a href="#code"><svg class="" xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></a></li>
+            <div class="flex max-md:hidden">
+                <ul class="flex items-center text-gray-700 text-xs max-lg:gap-3 font-medium">
+                    <li class="px-4 py-2 cursor-pointer hover:text-gray-200 hover:bg-primary rounded-full transition duration-100 ease-in-out"><a href="#home">Home</a></li>
+                    <li class="px-4 py-2 cursor-pointer hover:text-gray-200 hover:bg-primary rounded-full transition duration-100 ease-in-out"><a href="#about">About</a></li>
+                    <li class="px-4 py-2 cursor-pointer hover:text-gray-200 hover:bg-primary rounded-full transition duration-100 ease-in-out"><a href="#clients">Clients</a></li>
+                    <li class="px-4 py-2 cursor-pointer hover:text-gray-200 hover:bg-primary rounded-full transition duration-100 ease-in-out"><a href="#projects">Project</a></li>
+                    <li class="px-4 py-2 cursor-pointer hover:text-gray-200 hover:bg-primary rounded-full transition duration-100 ease-in-out"><a href="#experience">Experience</a></li>
+                    <li class="px-4 py-2 cursor-pointer hover:text-gray-200 hover:bg-primary rounded-full transition duration-100 ease-in-out"><a href="#education">Education</a></li>
+                    <li class="px-4 py-2 cursor-pointer hover:text-gray-200 hover:bg-primary rounded-full transition duration-100 ease-in-out"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
+
             </nav>
     </div>
+    
+    <div class="fixed right-4 top-[10vh] z-50">
+                <ul class="absolute top-4 right-0 border flex-col border-[#ffffff30] flex max-sm:px-1 max-sm:py-6 max-sm:flex-col items-center justify-center bg-primary rounded-full px-1 py-4 max-sm:top-[10vh]">
+                    <li class="text-white text-sm px-3 cursor-pointer rounded-t-lg py-2 w-full border-b-2 border-transparent hover:bg-gray-800 hover:border-b-2 hover:border-sky-500 hover:text-sky-400 transition duration-150 ease-in-out"><a href="#home"><svg class="max-sm:w-[19px]" xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></a></li>
+                    <li class="text-white text-sm px-3 cursor-pointer rounded-t-lg py-2 w-full border-b-2 border-transparent hover:bg-gray-800 hover:border-b-2 hover:border-sky-500 hover:text-sky-400 transition duration-150 ease-in-out"><a href="#about"><svg class="max-sm:w-[19px]" xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></a></li>
+                    <li class="text-white text-sm px-3 text-center cursor-pointer rounded-t-lg py-2 w-full border-b-2 border-transparent hover:bg-gray-800 hover:border-b-2 hover:border-sky-500 hover:text-sky-400 transition duration-150 ease-in-out"><a href="#contact"><svg class="max-sm:w-[19px]" xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></a></li>
+                    <li class="text-white text-sm px-3 cursor-pointer rounded-t-lg py-2 w-full border-b-2 border-transparent hover:bg-gray-800 hover:border-b-2 hover:border-sky-500 hover:text-sky-400 transition duration-150 ease-in-out"><a href="#project"><svg class="max-sm:w-[19px]" xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a></li>
+                    <li class="text-white text-sm px-3 cursor-pointer rounded-t-lg py-2 w-full border-b-2 border-transparent hover:bg-gray-800 hover:border-b-2 hover:border-sky-500 hover:text-sky-400 transition duration-150 ease-in-out"><a href="#code"><svg class="max-sm:w-[19px]" xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></a></li>
+                </ul>
+            </div>
 
-    <section id="home" class="pt-32 min-h-screen max-md:pt-24">
+    <section id="home" class="pt-28 max-md:pt-24 mb-20">
         <div class="container">
             <div class="flex max-md:flex-wrap-reverse">
                 <div class="w-full self-center max-md:self-start max-smaller:self-center px-6">
-                    <h1 class="font-japan font-semibold text-lg">アミー ハムザウ</h1>
-                    <h1 class="text-base font-semibold text-primary">Let me introduce my self, my name is<span class="block text-5xl font-display font-extrabold text-slate-900">Amir Hamzah</span></h1>
-                    <h2 class=" font-bold text-gray-600 text-lg mt-2 mb-4">UI/UX Designer & Full Stack Developer</h2>
-                    <p class="font-normal leading-relaxed text-sm text-gray-400">I am currently a high school student who loves <span class="text-gray-500 font-medium underline">UI/UX design</span> and <span class="text-gray-500 font-medium underline">web development</span>.</p>
+                    <h1 class="font-japan font-bold text-gray-800 text-2xl mb-1">アミー ハムザウ</h1>
+                    <h1 class="text-sm font-normal text-gray-600 max-sm:text-sm"><span class="tracking-[2px]">Hi, let me introduce my self, my name is</span><span class="block text-6xl font-display font-extrabold max-sm:text-5xl text-slate-900 mb-2">Amir Hamzah.</span></h1>
+                    <h2 class=" font-bold text-gray-800 text-3xl max-sm:text-lg mb-4">UI/UX Designer & Junior SE.</h2>
+                    <p class="font-normal leading-relaxed text-sm text-gray-400 max-w-[80%]">I am currently a high school student who loves <span class="text-gray-500 font-medium underline">UI/UX design</span> and <span class="text-gray-500 font-medium underline">web development</span>.</p>
 
-                    <div class="flex gap-2 mt-6 max-md:mb-32">
-                        <a href="#" class="text-xs font-semibold text-primary bg-transparent py-3 px-8 rounded-full border border-primary hover:bg-primary hover:border hover:border-transparent hover:text-white hover:shadow-md transition duration-200 ease-in-out">About me</a>
+                    <div class="flex gap-2 mt-6">
+                        <a href="#" class="text-[12px] max-smaller:text-[10px] max-xsmall:text-[9px] font-semibold text-primary bg-transparent py-3 px-8 rounded-full border border-primary hover:bg-primary hover:border hover:border-transparent hover:text-white hover:shadow-md transition duration-200 ease-in-out">About me</a>
                         
-                        <a href="#" class="text-xs flex items-center font-semibold text-white bg-primary py-3 px-8 rounded-full border border-transparent hover:border hover:border-primary hover:shadow-md transition duration-200 ease-in-out">Let's collaborate <span class="relative left-2"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a>
+                        <a href="#" class="text-[12px] max-smaller:text-[10px] max-xsmall:text-[9px] flex items-center font-semibold text-white bg-primary py-3 px-8 rounded-full border border-transparent hover:border hover:border-primary hover:shadow-md hover:opacity-[95%] transition duration-200 ease-in-out">Let's collaborate <span class="relative left-2"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a>
                     </div>
                         
                 </div>
 
-                <div class="w-full self-end px-4 ">
+                <div class="w-[80%] self-end px-4">
                     <div class="my-10">
-                        <img src="assets\gfx\Dark.png" alt="me" class="max-w-[240px] mx-auto max-md:mx-0 max-smaller:mx-auto">
+                        <img src="assets\gfx\Dark.png" alt="me" class="max-w-[245px] mx-auto max-md:mx-0 max-smaller:mx-auto">
                     </div>
                 </div>
             
@@ -66,11 +84,80 @@
     </section>
 
 
-    <section class="min-h-screen bg-primary" id="about">
+    <section class="bg-primary" id="about">
         <div class="container">
             <div class="flex flex-wrap justify-center self-center">
                 <div class="pt-24">
-                    <h1 class="font-bold text-2xl text-white">About me</h1>
+                    <h1 class="font-bold text-2xl text-white text-center mb-16">Recent Project</h1>
+
+                    <div class="w-full flex flex-wrap justify-center gap-x-6 gap-y-10 ">
+                        
+                        
+                        <div class="w-[310px] h-auto rounded-lg cursor-pointer bg-neutral-800 border border-neutral-700 overflow-hidden">
+                            <a href="https://www.youtube.com" target="_blank">
+                                <div class="w-full max-h-[190px] overflow-hidden">
+                                    <img src="https://th.bing.com/th/id/OIP.0W6VkJwN3zaDSMr10fYVSQHaE7?w=245&h=180&c=7&r=0&o=5&dpr=1.2&pid=1.7" alt="new" class="w-full bg-cover bg-center grayscale-[100%] brightness-[90%] cursor-pointer hover:brightness-[100%] hover:scale-[1.3] hover:grayscale-0 transition duration-300 ease-in-out">
+                            </div>
+                                
+                            <div class="w-full px-5 py-3 text center">
+                                <h3 class="text-gray-300 text-lg cursor-pointer hover:text-neutral-100 truncate font-semibold mt-4 mb-2">Web Programming</h3>
+                                <p class="text-sm font-normal text-gray-500 cursor-pointer transition duration-100 ease-in-out hover:text-gray-400 mb-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quae dolores dolore reprehenderit quibusdam ipsum ullam, cupiditate neque recusandae optio!</p>
+
+                                <div class="w-full bg-transparent border border-neutral-700 hover:bg-[#0ea5e90a] hover:border-[#0ea5e935] cursor-pointer rounded-lg px-4 py-2 mb-5 text-center transition duration-300 ease-in-out">
+                                    <a href="#" class="text-sm text-white">Show project</a>
+                                </div>
+                                
+                            </div>
+                        </a>
+                            
+                        </div>
+                        
+
+                        
+                    <div class="w-[310px] h-auto rounded-lg bg-neutral-800 border border-neutral-700 overflow-hidden">
+                        <a href="https://www.youtube.com" target="_blank">
+                                <div class="w-full max-h-[190px] overflow-hidden">
+                                <img src="https://th.bing.com/th/id/OIP.0W6VkJwN3zaDSMr10fYVSQHaE7?w=245&h=180&c=7&r=0&o=5&dpr=1.2&pid=1.7" alt="new" class="w-full bg-cover bg-center grayscale-[100%] brightness-[90%] cursor-pointer hover:brightness-[100%] hover:scale-[1.3] hover:grayscale-0 transition duration-300 ease-in-out">
+                            </div>
+
+                            <div class="w-full px-5 py-3 text center">
+                                <h3 class="text-gray-300 text-lg cursor-pointer hover:text-neutral-100 truncate font-semibold mt-4 mb-2">Logo Design</h3>
+                                <p class="text-sm font-normal text-gray-500 cursor-pointer transition duration-100 ease-in-out hover:text-gray-400 mb-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quae dolores dolore reprehenderit quibusdam ipsum ullam, cupiditate neque recusandae optio!</p>
+                                
+                                <div class="w-full bg-transparent border border-neutral-700 hover:bg-[#0ea5e90a] hover:border-[#0ea5e935] cursor-pointer rounded-lg px-4 py-2 mb-5 text-center transition duration-300 ease-in-out">
+                                    <a href="#" class="text-xs text-white">Show project</a>
+                                </div>
+                                
+                            </div>
+                            
+                        </a>
+                    </div>
+                        
+                    
+                    <div class="w-[310px] h-auto rounded-lg bg-neutral-800 border border-neutral-700 overflow-hidden">
+                        <a href="https://www.youtube.com" target="_blank">
+                            <div class="w-full max-h-[190px] overflow-hidden">
+                                <img src="https://th.bing.com/th/id/OIP.0W6VkJwN3zaDSMr10fYVSQHaE7?w=245&h=180&c=7&r=0&o=5&dpr=1.2&pid=1.7" alt="new" class="w-full bg-cover bg-center grayscale-[100%] brightness-[90%] cursor-pointer hover:brightness-[100%] hover:scale-[1.3] hover:grayscale-0 transition duration-300 ease-in-out">
+                            </div>
+
+                            <div class="w-full px-5 py-3 text center">
+                                <h3 class="text-gray-300 text-lg cursor-pointer hover:text-neutral-100 truncate font-semibold mt-4 mb-2">Modern Fashion Design</h3>
+                                <p class="text-sm font-normal text-gray-500 cursor-pointer transition duration-100 ease-in-out hover:text-gray-400 mb-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quae dolores dolore reprehenderit quibusdam ipsum ullam, cupiditate neque recusandae optio!</p>
+
+                                <div class="w-full bg-transparent border border-neutral-700 hover:bg-[#0ea5e90a] hover:border-[#0ea5e935] cursor-pointer rounded-lg px-4 py-2 mb-5 text-center transition duration-300 ease-in-out">
+                                    <a href="#" class="text-sm text-white">Show project</a>
+                                </div>
+
+                            </div>
+                            
+                        </a>
+                    </div>
+                        
+
+
+                    </div>
+
+
                 </div>
             </div>
         </div>
