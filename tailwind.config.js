@@ -15,6 +15,7 @@ module.exports = {
       screens: {
         xsmall: '360px',
         smaller: '450px',
+        tablet: '981px',
       },
 
       fontFamily: {

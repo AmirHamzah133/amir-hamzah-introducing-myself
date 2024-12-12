@@ -23,13 +23,14 @@
         <nav class="flex justify-between items-center px-[4%]">
             
             <div class="right-0 flex justify-center">
-                <ul class="max-w-1/3 flex items-center gap-x-4 justify-center">
-                    <h1 class="font-extrabold text-lg">AmirHamzah.</h1>
-                    <h1 class="font-japan font-medium text-sm text-gray-400">アミー ハムザウ</h1>
+                <ul class="max-w-1/3 flex items-center gap-x-4 max-xsmall:gap-x-2 justify-center">
+                    <h1 class="font-extrabold text-lg max-xsmall:text-sm">AmirHamzah.</h1>
+                    <h1 class="font-japan font-medium text-sm max-xsmall:text-xs text-gray-400">アミー ハムザウ</h1>
                 </ul>
             </div>
             
-            <div class="flex max-md:hidden">
+
+            <div class="flex max-tablet:hidden">
                 <ul class="flex items-center text-gray-700 text-xs max-lg:gap-3 font-medium">
                     <li class="px-4 py-2 cursor-pointer hover:text-gray-200 hover:bg-primary rounded-full transition duration-100 ease-in-out"><a href="#home">Home</a></li>
                     <li class="px-4 py-2 cursor-pointer hover:text-gray-200 hover:bg-primary rounded-full transition duration-100 ease-in-out"><a href="#about">About</a></li>
@@ -41,10 +42,23 @@
                 </ul>
             </div>
 
-            </nav>
+            <div id="hamburgerMenu" class="hidden max-tablet:flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </div>
+
+        </nav>
+        
     </div>
     
-    <div class="fixed right-4 top-[10vh] z-50">
+            <div id="arrowRight" class="fixed top-[15vh] right-5 text-white rounded-md text-center px-4 py-3 z-50 bg-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </div>
+            
+            <div id="arrowLeft" class="fixed hidden top-[15vh] right-5 text-white rounded-md text-center px-4 py-3 z-50 bg-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            </div>
+
+    <div id="floatingMenu" class="fixed right-4 top-[20vh] max-sm:top-[12vh] z-50 transition duration-300 ease-out">
                 <ul class="absolute top-4 right-0 border flex-col border-[#ffffff30] flex max-sm:px-1 max-sm:py-6 max-sm:flex-col items-center justify-center bg-primary rounded-full px-1 py-4 max-sm:top-[10vh]">
                     <li class="text-white text-sm px-3 cursor-pointer rounded-t-lg py-2 w-full border-b-2 border-transparent hover:bg-gray-800 hover:border-b-2 hover:border-sky-500 hover:text-sky-400 transition duration-150 ease-in-out"><a href="#home"><svg class="max-sm:w-[19px]" xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></a></li>
                     <li class="text-white text-sm px-3 cursor-pointer rounded-t-lg py-2 w-full border-b-2 border-transparent hover:bg-gray-800 hover:border-b-2 hover:border-sky-500 hover:text-sky-400 transition duration-150 ease-in-out"><a href="#about"><svg class="max-sm:w-[19px]" xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></a></li>
@@ -52,7 +66,7 @@
                     <li class="text-white text-sm px-3 cursor-pointer rounded-t-lg py-2 w-full border-b-2 border-transparent hover:bg-gray-800 hover:border-b-2 hover:border-sky-500 hover:text-sky-400 transition duration-150 ease-in-out"><a href="#project"><svg class="max-sm:w-[19px]" xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a></li>
                     <li class="text-white text-sm px-3 cursor-pointer rounded-t-lg py-2 w-full border-b-2 border-transparent hover:bg-gray-800 hover:border-b-2 hover:border-sky-500 hover:text-sky-400 transition duration-150 ease-in-out"><a href="#code"><svg class="max-sm:w-[19px]" xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></a></li>
                 </ul>
-            </div>
+    </div>
 
     <section id="home" class="pt-28 max-md:pt-24 mb-20">
         <div class="container">
@@ -163,7 +177,7 @@
         </div>
     </section>
 
+    <script src="/JS/script.js"></script>
 </body>
 
-<script src="/JS/script.js"></script>
 </html>
