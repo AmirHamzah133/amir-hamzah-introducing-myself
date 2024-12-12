@@ -1255,6 +1255,26 @@ video {
   transition-duration: 300ms;
 }
 
+.duration-\[\] {
+  transition-duration: ;
+}
+
+.duration-\[400ms\] {
+  transition-duration: 400ms;
+}
+
+.duration-\[1000ms\] {
+  transition-duration: 1000ms;
+}
+
+.duration-\[500ms\] {
+  transition-duration: 500ms;
+}
+
+.duration-\[300ms\] {
+  transition-duration: 300ms;
+}
+
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
