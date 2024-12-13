@@ -692,6 +692,14 @@ video {
   top: 6rem;
 }
 
+.right-2 {
+  right: 0.5rem;
+}
+
+.right-20 {
+  right: 5rem;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -1078,6 +1086,72 @@ video {
   background-color: rgb(37 37 37 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#2222\] {
+  background-color: #2222;
+}
+
+.bg-\[\#222\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 34 34 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#222222\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 34 34 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#22222290\] {
+  background-color: #22222290;
+}
+
+.bg-\[\#22222209\] {
+  background-color: #22222209;
+}
+
+.bg-\[\#22222240\] {
+  background-color: #22222240;
+}
+
+.bg-\[\#222222b0\] {
+  background-color: #222222b0;
+}
+
+.bg-\[\#222222c0\] {
+  background-color: #222222c0;
+}
+
+.bg-\[\#222222d0\] {
+  background-color: #222222d0;
+}
+
+.bg-\[\#222222f0\] {
+  background-color: #222222f0;
+}
+
+.bg-\[\#2222220\] {
+  background-color: #2222220;
+}
+
+.bg-\[\#222222f\] {
+  background-color: #222222f;
+}
+
+.bg-\[\#222222fa\] {
+  background-color: #222222fa;
+}
+
+.bg-\[\#222222fd\] {
+  background-color: #222222fd;
+}
+
+.bg-\[\#222222f9\] {
+  background-color: #222222f9;
+}
+
+.bg-\[\#222222fe\] {
+  background-color: #222222fe;
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1356,6 +1430,21 @@ video {
   font-family: Host Grotesk, serif;
 }
 
+.backdrop\:blur::backdrop {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.backdrop\:blur-sm::backdrop {
+  --tw-blur: blur(4px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.backdrop\:blur-lg::backdrop {
+  --tw-blur: blur(16px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .hover\:scale-\[1\.3\]:hover {
   --tw-scale-x: 1.3;
   --tw-scale-y: 1.3;
@@ -1503,6 +1592,10 @@ video {
 .hover\:bg-\[\#303030\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(48 48 48 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:stroke-secondary:hover {
+  stroke: #0ea5e9;
 }
 
 .hover\:text-gray-200:hover {

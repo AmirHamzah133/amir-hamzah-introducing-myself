@@ -3,6 +3,7 @@ const menu = document.getElementById("hamburgerMenu");
 const arrowR = document.getElementById("arrowRight");
 const arrowL = document.getElementById("arrowLeft");
 const dropMenu = document.getElementById("menuDrop");
+const exitMenu = document.getElementById("exitMenu");
 
 arrowR.addEventListener("click", function(){
     menuFloat.classList.add("translate-x-40");
