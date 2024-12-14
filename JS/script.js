@@ -36,7 +36,7 @@ const overlayBlack = document.getElementById("overlayBlack");
 card.addEventListener("mousemove", function(){
     imgCard.classList.add("brightness-[70%]");
     imgCard.classList.add("scale-[1.3]");
-    imgCard.classList.add("blur-[3px]");
+    imgCard.classList.add("blur-[4px]");
     pcard.classList.remove("translate-y-40");
     pcard.classList.add("translate-y-0");
     pcard.classList.remove("hidden");
@@ -49,7 +49,7 @@ card.addEventListener("mousemove", function(){
         imgCard.classList.remove("brightness-[70%]");
         imgCard.classList.remove("scale-[1.3]");
         imgCard.classList.remove("grayscale-[100%]");
-        imgCard.classList.remove("blur-[3px]");
+        imgCard.classList.remove("blur-[4px]");
         overlayBlack.classList.remove("opacity-40");
         overlayBlack.classList.add("opacity-0");
     })
@@ -64,14 +64,14 @@ cardTwo.addEventListener("mousemove", function(){
     overlayBlackTwo.classList.add("opacity-40");
     imgCardTwo.classList.add("scale-[1.3]");
     imgCardTwo.classList.add("brightness-[70%]");
-    imgCardTwo.classList.add("blur-[3px]");
+    imgCardTwo.classList.add("blur-[4px]");
     pCardTwo.classList.remove("translate-y-40");
     pCardTwo.classList.add("translate-y-0");
     
     this.addEventListener("mouseleave", function(){
         overlayBlackTwo.classList.remove("opacity-40");
         overlayBlackTwo.classList.add("opacity-0");
-        imgCardTwo.classList.remove("blur-[3px]");
+        imgCardTwo.classList.remove("blur-[4px]");
         imgCardTwo.classList.remove("scale-[1.3]");
         pCardTwo.classList.remove("translate-y-0");
         pCardTwo.classList.add("translate-y-40");
@@ -87,7 +87,7 @@ const pCardThree = document.getElementById("pCardThree");
 cardThree.addEventListener("mousemove", function(){
     overlayBlackThree.classList.remove("opacity-0");
     overlayBlackThree.classList.add("opacity-40");
-    imgCardThree.classList.add("blur-[3px]");
+    imgCardThree.classList.add("blur-[4px]");
     imgCardThree.classList.add("brightness-[70%]");
     imgCardThree.classList.add("scale-[1.3]");
     pCardThree.classList.remove("translate-y-40");
@@ -97,9 +97,51 @@ cardThree.addEventListener("mousemove", function(){
         overlayBlackThree.classList.remove("opacity-40");
         overlayBlackThree.classList.add("opacity-0");
         imgCardThree.classList.remove("scale-[1.3]");
-        imgCardThree.classList.remove("blur-[3px]");
+        imgCardThree.classList.remove("blur-[4px]");
         imgCardThree.classList.remove("brightness-[70%]");
         pCardThree.classList.remove("translate-y-0");
         pCardThree.classList.add("translate-y-40");
+    })
+})
+
+const infoDropOne = document.getElementById("infoDropOne");
+const singleArrowTopOne = document.getElementById("singleArrowTopOne");
+const singleArrowBottomOne = document.getElementById("singleArrowBottomOne");
+const svgArrowBottomOne = document.getElementById("svgArrowBottomOne");
+const svgArrowTopOne = document.getElementById("svgArrowTopOne");
+
+const pDropOne = document.getElementById("pDropOne");
+const pDropTwo = document.getElementById("pDropTwo");
+
+infoDropOne.addEventListener("click", function(){
+    pDropOne.classList.remove("hidden");
+    singleArrowTopOne.classList.remove("hidden");
+    singleArrowBottomOne.classList.toggle("hidden");
+    svgArrowBottomOne.classList.toggle("hidden");
+    
+    this.addEventListener("click", function(){
+        pDropOne.classList.toggle("hidden");
+        singleArrowBottomOne.classList.remove("hidden");
+        singleArrowTopOne.classList.toggle("hidden");
+    })
+})
+
+const infoDropTwo = document.getElementById("infoDropTwo");
+const singleArrowTopTwo = document.getElementById("singleArrowTopTwo");
+const singleArrowBottomTwo = document.getElementById("singleArrowBottomTwo");
+const svgArrowBottomTwo = document.getElementById("svgArrowBottomTwo");
+const svgArrowTopTwo = document.getElementById("svgArrowTopTwo");
+
+
+infoDropTwo.addEventListener("click", function(){
+    pDropTwo.classList.remove("hidden");
+    singleArrowTopTwo.classList.remove("hidden");
+    singleArrowBottomTwo.classList.toggle("hidden");
+    svgArrowBottomTwo.classList.toggle("hidden");
+    
+    this.addEventListener("click", function(){
+        pDropTwo.classList.toggle("hidden");
+        singleArrowBottomTwo.classList.remove("hidden");
+        singleArrowTopTwo.classList.toggle("hidden");
     })
 })
