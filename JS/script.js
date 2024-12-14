@@ -1,5 +1,5 @@
-const menuFloat = document.getElementById("floatingMenu");
 const menu = document.getElementById("hamburgerMenu");
+const menuFloat = document.getElementById("floatingMenu");
 const arrowR = document.getElementById("arrowRight");
 const arrowL = document.getElementById("arrowLeft");
 const dropMenu = document.getElementById("menuDrop");

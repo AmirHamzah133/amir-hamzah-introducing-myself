@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXT</title>
+    <title>Amir Hamzah</title>
     <link rel="stylesheet" href="./src/output.css">
 
 <style>
@@ -12,16 +12,28 @@
     * {
         scroll-behavior: smooth;
         -webkit-user-drag: none;
+    }
+
+    #home img {
         user-select: none;
     }
+    
+    #arrowRight {
+        user-select: none;
+    }
+    
+    #arrowLeft {
+        user-select: none;
+    }
+
 </style>
 
 </head>
 
-<body class="overflow-x-hidden *:font-primary ">
+<body class="overflow-x-hidden *:font-primary selection:bg-[#1f1f1ff0] selection:text-neutral-200">
 
 
-    <div id="menuDrop" class="fixed w-[100vw] h-[100vh] z-[60] bg-[#222222fd] transition duration-200 ease-in-out translate-y-[100vh]">
+    <div id="menuDrop" class="fixed w-[100vw] h-[100vh] z-[60] bg-[#222222fd] transition duration-300 ease-in-out translate-y-[100vh]">
         <div id="exitMenu" class="top-16 right-20 absolute cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 25.66 25.66"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3px;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><line class="cls-1" x1="1" y1="1" x2="24.66" y2="24.66"/><line class="cls-1" x1="1" y1="24.49" x2="24.35" y2="1.15"/></g></g></svg>
             </div>
@@ -151,32 +163,40 @@
 
     </section>
 
+    <section class="">
+        <div class="container">
+            <div class="flex flex-wrap justify-center self-center">
+
+            </div>
+        </div>
+    </section>
+
 
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="flex flex-wrap justify-center self-center">
                 <div class="pt-16">
-                    <h1 class="font-bold text-2xl text-white text-center mb-16">Recent Project</h1>
+                    <h1 class="font-bold text-2xl text-white text-center mb-14">Recent Project</h1>
 
-                    <div class="w-full flex flex-wrap justify-center gap-x-6 gap-y-10 mb-10">
+                    <div class="w-full flex flex-wrap justify-center gap-x-6 gap-y-10 mb-20">
                         
                         
-                        <div class="w-[310px] h-auto rounded-xl bg-[#252525] border border-neutral-600 overflow-hidden">
+                        <div class="w-[310px] h-auto rounded-xl bg-[#222222] border border-[#3b3b3b] overflow-hidden">
                             
                                 <div id="card" class="relative w-full max-h-[190px] overflow-hidden">
                                     <div id="overlayBlack" class="opacity-0 absolute z-[5] w-full h-full bg-black transition duration-[400ms] ease-in-out">
                                     </div>
 
-                                        <img id="imgCard" src="https://th.bing.com/th/id/OIP.0W6VkJwN3zaDSMr10fYVSQHaE7?w=245&h=180&c=7&r=0&o=5&dpr=1.2&pid=1.7" alt="new" class="w-full h-[190px] bg-cover bg-center grayscale-[0%], brightness-[90%] transition duration-300 ease-in-out">
+                                        <img id="imgCard" src="https://th.bing.com/th/id/OIP.0W6VkJwN3zaDSMr10fYVSQHaE7?w=245&h=180&c=7&r=0&o=5&dpr=1.2&pid=1.7" alt="new" class="w-full h-[190px] bg-cover bg-center grayscale-[0%] brightness-[90%] transition duration-300 ease-in-out">
                                     <p id="pCard" class="absolute right h-full translate-y-40 flex items-center top-0 right-0 z-10 text-center text-sm text-white font-semibold transition duration-[450ms] ease-in-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, illum.</p>
                             </div>
                                 
                             <div class="w-full px-5 py-3 text center">
-                                <h3 class="text-gray-300 text-lg cursor-pointer hover:text-neutral-100 truncate font-semibold mt-4 mb-2">Web Programming</h3>
-                                <p class="text-sm font-normal text-gray-500 cursor-pointer transition duration-100 ease-in-out hover:text-gray-400 mb-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quae dolores dolore reprehenderit quibusdam ipsum ullam, cupiditate neque recusandae optio!</p>
+                                <h3 class="text-gray-300 text-xl cursor-pointer hover:text-neutral-100 truncate font-bold mt-4 mb-3">Web Programming</h3>
+                                <p class="text-sm font-normal text-gray-500 cursor-pointer transition duration-100 ease-in-out hover:text-gray-400 mb-9">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quae dolores dolore reprehenderit quibusdam ipsum ullam, cupiditate neque recusandae optio!</p>
 
-                                <a href="https://www.youtube.com" target="_blank" class="text-sm text-white">
-                                    <div class="w-full bg-transparent border border-[#3a3a3a] hover:bg-[#303030] hover:border-[#3f3f3f] cursor-pointer rounded-lg px-4 py-2 mb-5 text-center transition duration-300 ease-in-out">Show Project
+                                <a href="https://www.youtube.com" target="_blank" class="text-sm text-neutral-200 hover:text-white">
+                                    <div class="w-full bg-transparent border border-[#3b3b3b] hover:bg-[#292929] hover:border-[#3f3f3f] cursor-pointer rounded-lg px-4 py-2 mb-8 text-center transition duration-300 ease-in-out">Show Project
                                     </div>
                                 </a>
                                 
@@ -187,7 +207,7 @@
                         
 
                         
-                    <div class="w-[310px] h-auto rounded-lg bg-[#252525] border border-neutral-700 overflow-hidden">
+                    <div class="w-[310px] h-auto rounded-xl bg-[#222222] border border-[#3b3b3b] overflow-hidden">
                         
                             <div id="cardTwo" class="relative w-full max-h-[190px] overflow-hidden">
                                     <div id="overlayBlackTwo" class="opacity-0 absolute z-[5] w-full h-full bg-black transition duration-[400ms] ease-in-out">
@@ -198,11 +218,11 @@
                             </div>
 
                             <div class="w-full px-5 py-3 text center">
-                                <h3 class="text-gray-300 text-lg cursor-pointer hover:text-neutral-100 truncate font-semibold mt-4 mb-2">UI/UX Design</h3>
-                                <p class="text-sm font-normal text-gray-500 cursor-pointer transition duration-100 ease-in-out hover:text-gray-400 mb-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quae dolores dolore reprehenderit quibusdam ipsum ullam, cupiditate neque recusandae optio!</p>
+                                <h3 class="text-gray-300 text-xl cursor-pointer hover:text-neutral-100 truncate font-bold mt-4 mb-3">UI/UX Design</h3>
+                                <p class="text-sm font-normal text-gray-500 cursor-pointer transition duration-100 ease-in-out hover:text-gray-400 mb-9">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quae dolores dolore reprehenderit quibusdam ipsum ullam, cupiditate neque recusandae optio!</p>
                                 
-                                <a href="https://www.youtube.com" target="_blank" class="text-sm text-white">
-                                    <div class="w-full bg-transparent border border-[#3a3a3a] hover:bg-[#303030] hover:border-[#3f3f3f] cursor-pointer rounded-lg px-4 py-2 mb-5 text-center transition duration-300 ease-in-out">Show Project
+                                <a href="https://www.youtube.com" target="_blank" class="text-sm text-neutral-200 hover:text-white">
+                                    <div class="w-full bg-transparent border border-[#3b3b3b] hover:bg-[#292929] hover:border-[#3f3f3f] cursor-pointer rounded-lg px-4 py-2 mb-8 text-center transition duration-300 ease-in-out">Show Project
                                     </div>
                                 </a>
                                 
@@ -212,7 +232,7 @@
                     </div>
                         
                     
-                    <div class="w-[310px] h-auto rounded-lg bg-[#252525] border border-neutral-700 overflow-hidden">
+                    <div class="w-[310px] h-auto rounded-xl bg-[#222222] border border-[#3b3b3b] overflow-hidden">
                         
                             <div id="cardThree" class="relative w-full max-h-[190px] overflow-hidden">
                                     <div id="overlayBlackThree" class="opacity-0 absolute z-[5] w-full h-full bg-black transition duration-[400ms] ease-in-out"></div>
@@ -222,11 +242,11 @@
                             </div>
 
                             <div class="w-full px-5 py-3 text center">
-                                <h3 class="text-gray-300 text-lg cursor-pointer hover:text-neutral-100 truncate font-semibold mt-4 mb-2">Illustration</h3>
-                                <p class="text-sm font-normal text-gray-500 cursor-pointer transition duration-100 ease-in-out hover:text-gray-400 mb-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quae dolores dolore reprehenderit quibusdam ipsum ullam, cupiditate neque recusandae optio!</p>
+                                <h3 class="text-gray-300 text-xl cursor-pointer hover:text-neutral-100 truncate font-bold mt-4 mb-3">Illustration</h3>
+                                <p class="text-sm font-normal text-gray-500 cursor-pointer transition duration-100 ease-in-out hover:text-gray-400 mb-9">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quae dolores dolore reprehenderit quibusdam ipsum ullam, cupiditate neque recusandae optio!</p>
 
-                               <a href="https://www.youtube.com" target="_blank" class="text-sm text-white">
-                                    <div class="w-full bg-transparent border border-[#3a3a3a] hover:bg-[#303030] hover:border-[#3f3f3f] cursor-pointer rounded-lg px-4 py-2 mb-5 text-center transition duration-300 ease-in-out">Show Project
+                               <a href="https://www.youtube.com" target="_blank" class="text-sm text-neutral-200 hover:text-white">
+                                    <div class="w-full bg-transparent border border-[#3b3b3b] hover:bg-[#292929] hover:border-[#3f3f3f] cursor-pointer rounded-lg px-4 py-2 mb-8 text-center transition duration-300 ease-in-out">Show Project
                                     </div>
                                 </a>
 
