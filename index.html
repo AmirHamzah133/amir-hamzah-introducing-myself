@@ -31,7 +31,7 @@
 }
     }
 
-    img {
+    img, svg {
         user-select: none;
         -webkit-user-drag: none;
     }
@@ -90,19 +90,34 @@
        </ul>
    </div>
 
-   <div id="chatBox" class="w-64 max-md:w-52 h-32 origin-bottom-right translate-y-5 scale-[0] rounded-lg z-[51] border border-[#ffffff30] outline-8 outline-primary bg-primary fixed bottom-16 right-8 overflow-x-hidden overflow-y-auto transition duration-300 ease-in-out">
+   <div id="tracingBox" class="w-[20px] h-[20px] z-[50] origin-bottom-right scale-[0] translate-y-6 fixed bottom-[3.4rem] right-11 transition duration-300 ease-in-out">
+       <svg class="stroke stroke-[#ffffff30]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.82 22.22"><path d="M25.82,0V19.62a2.6,2.6,0,0,1-4.44,1.83L0,.07Z" style="fill:#262626"/></svg>
+    </div>
+       
+   <div id="chatBox" class="w-64 max-md:w-60 h-36 origin-bottom-right translate-y-5 scale-[0] rounded-lg z-[51] border border-[#ffffff30] bg-primary fixed bottom-16 right-9 overflow-x-hidden overflow-y-auto transition duration-300 ease-in-out">
+
 
     <div class="w-full h-auto overflow-x-hidden overflow-y-auto p-3">
 
         <div class="pb-2">
 
-            <h1 class="z-[52] text-white truncate">Halo👋🏻, saya Amir.</h1>
             
-            <p class="text-xs mt-1 text-[#b53333de] rounded-lg bg-[#b5333310] md:hidden font-light"><span class="font-medium">Note</span>:
-                Saya sarankan kamu untuk mengeksplor halaman ini dengan tampilan <i><b>desktop</b></i> supaya kamu bisa mendapatkan pengalaman yang lebih baik. Hehe... 😆</p>
+            <div class="flex items-center justify-between">
+                <!-- <img class="mr-2" src="assets\gfx\Dark.png" width="18px" height="18px" alt=""> -->
+
+                <h1 class="z-[52] text-white truncate">Halo👋🏻, saya Amir.</h1>
+                
+                <div id="exitChatBox" class="box-content p-1 rounded-md cursor-pointer hover:bg-[#303030]">
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" viewBox="0 0 25.66 25.66"><defs><style>.cls-1{fill:none;stroke:#ffffff80;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3px;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><line class="cls-1" x1="1" y1="1" x2="24.66" y2="24.66"/><line class="cls-1" x1="1" y1="24.49" x2="24.35" y2="1.15"/></g></g></svg>
+                </div>
+                
+            </div>
+            
+            <p class="text-xs mt-2 text-[#b53333de] rounded-lg bg-[#b5333310] md:hidden font-light"><span class="font-medium">Note</span>:
+                Menggunakan perangkat desktop atau laptop akan memberikan pengalaman dan tampilan yang lebih baik.</p>
             
             <p class="z-[52] text-xs text-neutral-300 truncate mt-1 max-md:mt-3">Tentang Projek ini</p>
-            <p class="text-xs mt-1 text-neutral-400 font-light">Halaman ini hanya sekedar project latihan atau disebut dengan istilah "toy project". Saya sering membuat projek serupa untuk melatih dan meningkatkan kemampuan saya dalam pemahaman terminologi di bidang pemrograman. Misalnya, ketika saya sudah menyelesaikan project yang saat ini teman-teman lihat, saya akan membangun kembali project sejenis dengan skema dan struktur yang lebih kompleks lagi dari sebelumnya setelah project ini selesai untuk terus meningkatkan kemampuan saya dalam pemrograman.</p>
+            <p class="text-xs mt-1 text-neutral-400 font-light">Halaman ini hanya sekedar project latihan / main-main atau disebut juga dengan istilah "toy project". Saya sering membuat projek serupa untuk melatih dan meningkatkan kemampuan saya dalam pemahaman terminologi di bidang pemrograman. Misalnya, ketika saya sudah menyelesaikan project yang saat ini teman-teman lihat, saya akan membangun kembali project sejenis dengan skema dan struktur yang lebih kompleks lagi dari sebelumnya setelah project ini selesai untuk terus meningkatkan kemampuan saya dalam pemrograman.</p>
 
             <p class="z-[52] text-xs text-neutral-300 mt-3 max-md:mt-3">Kenapa bisa Terjun di Bidang Programming?</p>
             <p class="text-xs mt-1 text-neutral-400 font-light">Singkatnya, saya penasaran dengan cara kerja dan mekanisme dari sebuah perangkat digital bekerja. Hingga saya memahami bahwa perangkat digital termasuk aplikasi disusun oleh kode-kode yang kompleks untuk menciptakan fungsi tertentu. Bahkan halaman yang teman-teman kunjungi saat ini, sebelumnya sudah dibangun oleh seseorang (yaitu saya sendiri) dengan menyusun susunan kode yang kompleks dan saling bekerjasama hingga fitur-fitur yang ada di halaman ini bisa teman-teman gunakan</p>
@@ -115,6 +130,10 @@
 
    <div id="notificationOne" class="">
     <svg class="fixed bottom-11 right-8 z-[51]" xmlns="http://www.w3.org/2000/svg" width="11px" height="11px" viewBox="0 0 9.24 9.24"><circle cx="4.62" cy="4.62" r="4.62" style="fill:#e13849"/></svg>
+   </div>
+
+   <div id="exitChatBoxNotification" class="cursor-pointer hidden">
+    <svg class="fixed bottom-6 right-8 z-50" xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" viewBox="0 0 26.89 26.89"><circle cx="13.45" cy="13.45" r="12.95" style="fill:#262626;stroke:#4f4f4f;stroke-miterlimit:10"/><line x1="7.88" y1="7.26" x2="19.01" y2="19.63" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10"/><line x1="7.88" y1="19.54" x2="18.86" y2="7.34" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10"/></svg>
    </div>
 
    <div id="notification" class="cursor-pointer">

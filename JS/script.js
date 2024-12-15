@@ -150,18 +150,49 @@ infoDropTwo.addEventListener("click", function(){
 
 const notificationOne = document.getElementById("notificationOne");
 const notification = document.getElementById("notification");
+const exitChatBoxNotification = document.getElementById("exitChatBoxNotification");
 const chatBox = document.getElementById("chatBox");
+const exitChatBox = document.getElementById("exitChatBox");
+const tracing = document.getElementById("tracingBox");
 
-notification.addEventListener("click", function(){
-    notificationOne.classList.add("hidden");
+notification.addEventListener("click", function(event){
+    event.preventDefault();  // yang penting gak error
     chatBox.classList.remove("scale-[0]");
     chatBox.classList.toggle("scale-[1]");
-    chatBox.classList.remove("translate-y-5");
+    chatBox.classList.remove("-translate-y-5");
+    chatBox.classList.add("-translate-y-2");
     chatBox.classList.add("translate-y-0");
-    
-    this.addEventListener("click", function(){
-        chatBox.classList.remove("scale-[1]");
-        chatBox.classList.toggle("scale-[0]");
-        chatBox.classList.toggle("translate-y-5");
-    })
+    tracing.classList.remove("translate-y-6");
+    tracing.classList.add("-translate-y-1");
+    tracing.classList.remove("scale-[0]");
+    tracing.classList.add("scale-[1]");
+    notificationOne.classList.add("hidden");
+    notification.classList.add("hidden");
+    exitChatBoxNotification.classList.remove("hidden");
+});
+
+exitChatBox.addEventListener("click", function() {
+    chatBox.classList.remove("scale-[1]");
+    chatBox.classList.toggle("scale-[0]");
+    chatBox.classList.remove("-translate-y-2");
+    chatBox.classList.add("translate-y-5");
+    tracing.classList.remove("-translate-y-1");
+    tracing.classList.add("translate-y-6");
+    tracing.classList.remove("scale-[1]");
+    tracing.classList.add("scale-[0]");
+    notification.classList.remove("hidden");
+    exitChatBoxNotification.classList.add("hidden");
+})
+
+exitChatBoxNotification.addEventListener("click", () => {
+    chatBox.classList.remove("scale-[1]");
+    chatBox.classList.add("scale-[0]");
+    chatBox.classList.remove("-translate-y-2");
+    chatBox.classList.add("translate-y-5");
+    exitChatBoxNotification.classList.add("hidden");
+    notification.classList.remove("hidden");
+    tracing.classList.remove("-translate-y-1");
+    tracing.classList.add("translate-y-6");
+    tracing.classList.remove("scale-[1]");
+    tracing.classList.add("scale-[0]");
 })
