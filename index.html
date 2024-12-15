@@ -150,8 +150,8 @@
             <div class="flex max-md:flex-wrap-reverse">
                 <div class="w-full self-center max-md:self-start max-smaller:self-center px-6">
                     <h1 class="font-japan font-bold text-gray-800 text-2xl mb-1">アミー ハムザウ</h1>
-                    <h1 class="text-sm font-normal text-gray-600 max-sm:text-sm"><span class="tracking-[2px]">Hi, let me introduce my self, my name is</span><span class="block text-6xl font-display font-extrabold max-sm:text-6xl max-xsmall:text-5xl max-smaller:mt-2 max-sm:mb-3 text-slate-900 mb-2">Amir Hamzah.</span></h1>
-                    <h2 class=" font-bold text-gray-800 text-3xl max-sm:text-2xl max-smaller:text-xl max-xsmall:text-lg mb-4">Front-end Developer.</h2>
+                    <h1 class="text-sm font-normal text-gray-600 max-sm:text-sm"><span class="tracking-[2px]">Hi, let me introduce my self, my name is</span><span class="block text-6xl font-display font-extrabold max-sm:text-5xl max-xsmall:text-5xl max-smaller:mt-2 max-sm:mb-3 text-slate-900 mb-2">Amir Hamzah.</span></h1>
+                    <h2 class=" font-bold text-gray-800 text-3xl max-sm:text-2xl max-smaller:text-xl max-xsmall:text-lg mb-4">Baqso Baqso. 🧐</h2>
                     <p class="font-normal leading-relaxed text-sm text-gray-400 max-w-[80%]">I am currently a high school student who loves <span class="text-gray-500 font-medium underline">UI/UX design</span> and <span class="text-gray-500 font-medium underline">web development</span>.</p>
 
                     <div class="flex gap-2 mt-6">
@@ -325,8 +325,8 @@
 
                 <div class="w-1/3 max-md:w-full mx-2 px-6">
 
-                    <div id="infoDropOne" class="w-fit flex gap-3 items-center cursor-pointer py-1 rounded-lg hover:bg-[#f2f2f2] max-sm:hover:bg-transparent">
-                        <h1 class="text-xl font-bold ">Lihat Selengkapnya</h1>
+                    <div id="infoDropOne" class="w-fit flex items-center cursor-pointer py-1 rounded-lg hover:bg-[#f2f2f2]">
+                        <h1 class="text-xl font-bold mr-3">Lihat Selengkapnya</h1>
 
                         <div id="singleArrowBottomOne" class="hidden"></div>
                         <svg class="" id="svgArrowBottomOne" width="12px" height="10px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.5 14"><path d="M10.28,14a1,1,0,0,1-.8-.39L.21,1.61A1,1,0,0,1,1.79.39l8.48,11,8.44-11a1,1,0,0,1,1.58,1.22l-9.22,12a1,1,0,0,1-.79.39Z" style="fill:#010201a0"/></svg>
@@ -340,8 +340,8 @@
 
                 <div class="w-1/3 max-md:w-full mx-2 px-6">
 
-                    <div id="infoDropTwo" class="w-fit flex gap-3 items-center cursor-pointer py-1 rounded-lg hover:bg-[#f2f2f2] max-sm:hover:bg-transparent">
-                        <h1 class="text-xl font-bold ">Biodata Tentang Saya</h1>
+                    <div id="infoDropTwo" class="w-fit flex items-center cursor-pointer py-1 rounded-lg hover:bg-[#f2f2f2]">
+                        <h1 class="text-xl font-bold mr-3">Biodata Tentang Saya</h1>
 
                         <div id="singleArrowBottomTwo" class="hidden"></div>
                         <svg id="svgArrowBottomTwo" width="12px" height="10px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.5 14"><path d="M10.28,14a1,1,0,0,1-.8-.39L.21,1.61A1,1,0,0,1,1.79.39l8.48,11,8.44-11a1,1,0,0,1,1.58,1.22l-9.22,12a1,1,0,0,1-.79.39Z" style="fill:#010201a0"/></svg>
@@ -360,13 +360,83 @@
 
     <section id="projects" class="bg-slate-100">
         <div class="container">
-            <div class="w-full flex flex-wrap self-center justify-center items-center">
-                <div class="w-1/3 flex justify-center flex-wrap pt-16">
-                    <h2 class="text-2xl font-bold">My Skills</h2>
+            <div class="w-full flex flex-wrap self-center justify-center pt-16 items-center">
+                <h1 class="text-2xl font-bold mb-10">Gallery</h1>
+
+                <div class="w-full flex flex-wrap justify-center gap-x-8 gap-y-10 mb-20">
+        
+                        <div class="w-[310px] h-auto rounded-xl bg-white shadow-md overflow-hidden">
+                            
+                                <div id="cardGallery" class="relative w-full max-h-[190px] overflow-hidden">
+                                    <div id="overlayBlackGallery" class="opacity-0 absolute z-[5] w-full h-full bg-black transition duration-[400ms] ease-in-out">
+                                    </div>
+
+                                        <img id="imgCardGallery" src="assets\img\81911b4dc9f94e4aec3e1c7c5bdb3729.jpg" alt="new" class="w-full h-[190px] bg-cover bg-center grayscale-[0%] brightness-[90%] transition duration-300 ease-in-out">
+                                    <p id="pCardGallery" class="absolute right h-full translate-y-40 flex items-center top-0 right-0 z-10 text-center text-sm text-white font-semibold transition duration-[450ms] ease-in-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, illum.</p>
+                            </div>
+                                
+                            <div class="w-full px-5 py-2 text center">
+                                <h3 class="text-primary text-xl cursor-pointer hover:text-gray-700 truncate font-semibold mt-4 mb-3">Minecraft</h3>
+                                <p class="text-sm font-normal text-gray-500 cursor-pointer transition duration-100 ease-in-out hover:text-gray-400 mb-9">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quae dolores dolore reprehenderit quibusdam ipsum ullam, cupiditate neque recusandae optio!</p>                            
+                                
+                            </div>
+                        
+                            
+                        </div>
+                        
+
+                        
+                    <div class="w-[310px] h-auto rounded-xl bg-white shadow-md overflow-hidden">
+                        
+                            <div id="cardTwoGallery" class="relative w-full max-h-[190px] overflow-hidden">
+                                    <div id="overlayBlackTwo" class="opacity-0 absolute z-[5] w-full h-full bg-black transition duration-[400ms] ease-in-out">
+                                    </div>
+
+                                        <img id="imgCardTwoGallery" src="assets\img\domain expansion.jpg" alt="new" class="relative -top-20 w-full h-full bg-cover cursor-pointer grayscale-[0%], brightness-[90%] transition duration-300 ease-in-out">
+                                    <p id="pCardTwoGallery" class="absolute right h-full translate-y-40 flex items-center top-0 right-0 z-10 text-center text-sm text-white font-semibold transition duration-[450ms] ease-in-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, illum.</p>
+                            </div>
+
+                            <div class="w-full px-5 py-2 text center">
+                                <h3 class="text-primary text-xl cursor-pointer hover:text-gray-700 truncate font-semibold mt-4 mb-3">Domain Expansion💀☠</h3>
+                                <p class="text-sm font-normal text-gray-500 cursor-pointer transition duration-100 ease-in-out hover:text-gray-400 mb-9">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quae dolores dolore reprehenderit quibusdam ipsum ullam, cupiditate neque recusandae optio!</p>
+                                
+                                
+                                
+                            </div>
+                            
+                        
+                    </div>
+                        
+                    
+                    <div class="w-[310px] h-auto rounded-xl bg-white shadow-md overflow-hidden">
+                        
+                            <div id="cardThreeGallery" class="relative w-full max-h-[190px] overflow-hidden">
+                                    <div id="overlayBlackThree" class="opacity-0 absolute z-[5] w-full h-full bg-black transition duration-[400ms] ease-in-out"></div>
+
+                                        <img id="imgCardThreeGallery" src="assets\img\Jogja.jpg" alt="new" class="relative -top-[210px] w-full h-full cursor-pointer grayscale-[0%], brightness-[90%] transition duration-300 ease-in-out">
+                                    <p id="pCardThreeGallery" class="absolute right h-full translate-y-40 flex items-center top-0 right-0 z-10 text-center text-sm text-white font-semibold transition duration-[450ms] ease-in-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, illum.</p>
+                            </div>
+
+                            <div class="w-full px-5 py-2 text center">
+                                <h3 class="text-primary text-xl cursor-pointer hover:text-gray-700 truncate font-semibold mt-4 mb-3">Capture</h3>
+                                <p class="text-sm font-normal text-gray-500 cursor-pointer transition duration-100 ease-in-out hover:text-gray-400 mb-9">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quae dolores dolore reprehenderit quibusdam ipsum ullam, cupiditate neque recusandae optio!</p>
+
+                               
+
+                            </div>
+                            
+                    </div>
+                        
+
+
+                    </div>
+                    
+
+                    
+
+
+
                 </div>
-
-                
-
             </div>
         </div>
     </section>
