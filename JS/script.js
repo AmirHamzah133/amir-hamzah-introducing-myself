@@ -156,9 +156,12 @@ notification.addEventListener("click", function(){
     notificationOne.classList.add("hidden");
     chatBox.classList.remove("scale-[0]");
     chatBox.classList.toggle("scale-[1]");
-
+    chatBox.classList.remove("translate-y-5");
+    chatBox.classList.add("translate-y-0");
+    
     this.addEventListener("click", function(){
         chatBox.classList.remove("scale-[1]");
         chatBox.classList.toggle("scale-[0]");
+        chatBox.classList.toggle("translate-y-5");
     })
 })
