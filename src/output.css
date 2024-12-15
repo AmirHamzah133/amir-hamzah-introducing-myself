@@ -2442,6 +2442,14 @@ video {
     width: 100%;
   }
 
+  .max-md\:w-5 {
+    width: 1.25rem;
+  }
+
+  .max-md\:w-52 {
+    width: 13rem;
+  }
+
   .max-md\:flex-wrap-reverse {
     flex-wrap: wrap-reverse;
   }
