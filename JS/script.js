@@ -145,3 +145,20 @@ infoDropTwo.addEventListener("click", function(){
         singleArrowTopTwo.classList.toggle("hidden");
     })
 })
+
+// NOTIFICATION
+
+const notificationOne = document.getElementById("notificationOne");
+const notification = document.getElementById("notification");
+const chatBox = document.getElementById("chatBox");
+
+notification.addEventListener("click", function(){
+    notificationOne.classList.add("hidden");
+    chatBox.classList.remove("scale-[0]");
+    chatBox.classList.toggle("scale-[1]");
+
+    this.addEventListener("click", function(){
+        chatBox.classList.remove("scale-[1]");
+        chatBox.classList.toggle("scale-[0]");
+    })
+})

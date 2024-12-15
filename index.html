@@ -9,13 +9,31 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Funnel+Display:wght@300..800&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Noto+Serif+JP:wght@220..900&family=Space+Grotesk:wght@300..700&display=swap');
 
+    
+
     * {
         scroll-behavior: smooth;
         -webkit-user-drag: none;
+        /* Mengubah tampilan scrollbar untuk seluruh elemen di halaman */
+        ::-webkit-scrollbar {
+        width: 8px; /* Lebar scrollbar */
+}
+
+/* Mengatur latar belakang track scrollbar */
+        ::-webkit-scrollbar-track {
+        background: #22222200; /* Sesuaikan dengan warna latar belakang container Anda */
+}
+
+/* Mengatur tampilan thumb scrollbar */
+        ::-webkit-scrollbar-thumb {
+        background: #333; /* Warna thumb */
+        border-radius: 24px; /* Membuat thumb berbentuk rounded */
+}
     }
 
-    #home img {
+    img {
         user-select: none;
+        -webkit-user-drag: none;
     }
     
     #arrowRight {
@@ -72,6 +90,25 @@
        </ul>
    </div>
 
+   <div id="chatBox" class="w-56 h-32 origin-bottom-right scale-[0] rounded-lg z-[51] border border-[#ffffff30] outline-8 outline-primary bg-primary fixed bottom-16 right-8 overflow-x-hidden overflow-y-auto transition duration-300 ease-in-out">
+
+    <div class="w-full h-auto overflow-x-hidden overflow-y-auto p-3">
+        <h1 class="z-[52] text-white truncate">Halo👋🏻, saya Amir.</h1>
+        
+        <p class="text-xs mt-1 text-[#b53333] md:hidden font-light">Saya sarankan kamu untuk mengeksplor halaman ini dengan tampilan <i><b>desktop</b></i> supaya kamu bisa mendapatkan pengalaman yang lebih baik. Hehe... 😆</p>
+
+        <p class="z-[52] text-xs text-neutral-300 truncate mt-1 max-md:mt-3">Tentang Projek ini</p>
+        <p class="text-xs mt-1 text-neutral-400 font-light">Saya membuat projek serupa untuk melatih dan meningkatkan kemampuan saya dalam pemahaman terminologi dan penguasaan teknik yang ada di bidang programming.</p>
+    </div>
+   </div>
+
+   <div id="notificationOne" class="">
+    <svg class="fixed bottom-11 right-8 z-[51]" xmlns="http://www.w3.org/2000/svg" width="11px" height="11px" viewBox="0 0 9.24 9.24"><circle cx="4.62" cy="4.62" r="4.62" style="fill:#ff0820"/></svg>
+   </div>
+
+   <div id="notification" class="cursor-pointer">
+       <svg class="fixed bottom-6 right-8 z-50" xmlns="http://www.w3.org/2000/svg" width="28px" height="28px" viewBox="0 0 26.89 26.89"><circle cx="13.45" cy="13.45" r="12.95" style="fill:#262626;stroke:#4f4f4f;stroke-miterlimit:10"/><path d="M17.15,11a3.71,3.71,0,1,0-7.41,0c0,4.33-1.86,5.57-1.86,5.57H19S17.15,15.3,17.15,11" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.32354708349963px"/><path d="M14.51,19a1.23,1.23,0,0,1-1.68.45,1.15,1.15,0,0,1-.45-.45" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.32354708349963px"/></svg>
+   </div>
 
     <div class="fixed top-0 right-0 max-smaller:right-0 w-full z-40 px-8 py-6 shadow-sm bg-[#ffffff90] backdrop-blur-lg">
         <nav class="flex justify-between items-center px-[4%]">
@@ -287,7 +324,7 @@
             <div class="w-full flex gap-4 justify-center flex-wrap self-center pt-10 pb-20">
                 <div class="w-1/3 max-md:w-full px-6 mx-2 mb-8">
                     <h1 class="text-xl font-bold mb-4">About me</h1>
-                    <p class="text-base text-gray-500">Berusia 16 tahun, lahir di Bandung, Jawa Barat. Hobi dengan bidang olahraga badminton sejak kecil dan berminat dengan bidang IT khususnya programming dengan pengalaman selama lebih dari 6 bulan.</p>
+                    <p class="text-base text-gray-500">Berusia 16 tahun, lahir di Bandung, Jawa Barat. Hobi dengan bidang olahraga badminton sejak kecil dan berminat dengan bidang IT khususnya programming dengan pengalaman selama lebih dari 3 bulan.</p>
                 </div>
 
                 <div class="w-1/3 max-md:w-full mx-2 px-6 mb-8">
@@ -363,7 +400,7 @@
             <div class="w-full flex flex-wrap self-center justify-center pt-16 items-center">
                 <h1 class="text-2xl font-bold mb-10">Gallery</h1>
 
-                <div class="w-full flex flex-wrap justify-center gap-x-8 gap-y-10 mb-20">
+                <div class="w-full flex flex-wrap justify-center gap-x-8 gap-y-10 md:gap-y-12 mb-20">
         
                         <div class="w-[310px] h-auto rounded-xl bg-white shadow-md overflow-hidden">
                             
@@ -426,6 +463,43 @@
                             </div>
                             
                     </div>
+                    <div class="w-[310px] h-auto rounded-xl bg-white shadow-md overflow-hidden">
+                        
+                            <div id="cardFourGallery" class="relative w-full max-h-[190px] overflow-hidden">
+                                    <div id="overlayBlackThree" class="opacity-0 absolute z-[5] w-full h-full bg-black transition duration-[400ms] ease-in-out"></div>
+
+                                        <img id="imgCardThreeGallery" src="assets\img\Anya.jpg" alt="new" class="relative -top-[65px] w-full h-full cursor-pointer grayscale-[0%], brightness-[90%] transition duration-300 ease-in-out">
+                                    <p id="pCardThreeGallery" class="absolute right h-full translate-y-40 flex items-center top-0 right-0 z-10 text-center text-sm text-white font-semibold transition duration-[450ms] ease-in-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, illum.</p>
+                            </div>
+
+                            <div class="w-full px-5 py-2 text center">
+                                <h3 class="text-primary text-xl cursor-pointer hover:text-gray-700 truncate font-semibold mt-4 mb-3">Spy x Family (Anya 🙀)</h3>
+                                <p class="text-sm font-normal text-gray-500 cursor-pointer transition duration-100 ease-in-out hover:text-gray-400 mb-9">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quae dolores dolore reprehenderit quibusdam ipsum ullam, cupiditate neque recusandae optio!</p>
+
+                               
+
+                            </div>
+                            
+                    </div>
+                    <div class="w-[310px] h-auto rounded-xl bg-white shadow-md overflow-hidden">
+                        
+                            <div id="cardFiveGallery" class="relative w-full max-h-[190px] overflow-hidden">
+                                    <div id="overlayBlackThree" class="opacity-0 absolute z-[5] w-full h-full bg-black transition duration-[400ms] ease-in-out"></div>
+
+                                        <img id="imgCardThreeGallery" src="assets\img\IMG_20241015_091240.jpg" alt="new" class="w-full h-[190px] cursor-pointer grayscale-[0%], brightness-[140%] transition duration-300 ease-in-out">
+                                    <p id="pCardThreeGallery" class="absolute right h-full translate-y-40 flex items-center top-0 right-0 z-10 text-center text-sm text-white font-semibold transition duration-[450ms] ease-in-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, illum.</p>
+                            </div>
+
+                            <div class="w-full px-5 py-2 text center">
+                                <h3 class="text-primary text-xl cursor-pointer hover:text-gray-700 truncate font-semibold mt-4 mb-3">IT Fest Workshop</h3>
+                                <p class="text-sm font-normal text-gray-500 cursor-pointer transition duration-100 ease-in-out hover:text-gray-400 mb-9">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quae dolores dolore reprehenderit quibusdam ipsum ullam, cupiditate neque recusandae optio!</p>
+
+                               
+
+                            </div>
+                            
+                    </div>
+                    
                         
 
 
