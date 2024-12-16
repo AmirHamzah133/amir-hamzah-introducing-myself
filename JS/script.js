@@ -104,7 +104,9 @@ cardThree.addEventListener("mousemove", function(){
     })
 })
 
-const infoDropOne = document.getElementById("infoDropOne");
+// DROP INFO COLUMN ONE ROW ONE
+
+const infoDropOne = document.getElementById("infoDropOneOne");
 const singleArrowTopOne = document.getElementById("singleArrowTopOne");
 const singleArrowBottomOne = document.getElementById("singleArrowBottomOne");
 const svgArrowBottomOne = document.getElementById("svgArrowBottomOne");
@@ -126,7 +128,32 @@ infoDropOne.addEventListener("click", function(){
     })
 })
 
-const infoDropTwo = document.getElementById("infoDropTwo");
+// DROP INFO COLUMN ONE ROW TWO
+const infoDropOneTwo = document.getElementById("infoDropOneTwo");
+const singleArrowTopOneTwo = document.getElementById("singleArrowTopOneTwo");
+const singleArrowBottomOneTwo = document.getElementById("singleArrowBottomOneTwo");
+const svgArrowBottomOneTwo = document.getElementById("svgArrowBottomOneTwo");
+const svgArrowTopOneTwo = document.getElementById("svgArrowTopOneTwo");
+
+const pDropOneTwo = document.getElementById("pDropOneTwo");
+
+infoDropOneTwo.addEventListener("click", function(){
+    pDropOneTwo.classList.remove("hidden");
+    singleArrowTopOneTwo.classList.remove("hidden");
+    singleArrowBottomOneTwo.classList.toggle("hidden");
+    svgArrowBottomOneTwo.classList.toggle("hidden");
+    
+    this.addEventListener("click", function(){
+        pDropOneTwo.classList.toggle("hidden");
+        singleArrowBottomOneTwo.classList.remove("hidden");
+        singleArrowTopOneTwo.classList.toggle("hidden");
+    })
+})
+
+
+// DROP INFO COLUMN TWO ROW ONE
+
+const infoDropTwo = document.getElementById("infoDropTwoOne");
 const singleArrowTopTwo = document.getElementById("singleArrowTopTwo");
 const singleArrowBottomTwo = document.getElementById("singleArrowBottomTwo");
 const svgArrowBottomTwo = document.getElementById("svgArrowBottomTwo");
@@ -146,6 +173,34 @@ infoDropTwo.addEventListener("click", function(){
     })
 })
 
+
+// DROP INFO COLUMN TWO ROW TWO
+
+const infoDropTwoTwo = document.getElementById("infoDropTwoTwo");
+const singleArrowTopTwoTwo = document.getElementById("singleArrowTopTwoTwo");
+const singleArrowBottomTwoTwo = document.getElementById("singleArrowBottomTwoTwo");
+const svgArrowBottomTwoTwo = document.getElementById("svgArrowBottomTwoTwo");
+const svgArrowTopTwoTwo = document.getElementById("svgArrowTopTwoTwo");
+const pDropTwoTwo = document.getElementById("pDropTwoTwo");
+
+
+infoDropTwoTwo.addEventListener("click", function(){
+    pDropTwoTwo.classList.remove("hidden");
+    singleArrowTopTwoTwo.classList.remove("hidden");
+    singleArrowBottomTwoTwo.classList.toggle("hidden");
+    svgArrowBottomTwoTwo.classList.toggle("hidden");
+    
+    this.addEventListener("click", function(){
+        pDropTwoTwo.classList.toggle("hidden");
+        singleArrowBottomTwoTwo.classList.remove("hidden");
+        singleArrowTopTwoTwo.classList.toggle("hidden");
+    })
+})
+
+
+
+
+
 // NOTIFICATION
 
 const notificationOne = document.getElementById("notificationOne");
@@ -159,9 +214,8 @@ notification.addEventListener("click", function(event){
     event.preventDefault();  // yang penting gak error
     chatBox.classList.remove("scale-[0]");
     chatBox.classList.toggle("scale-[1]");
-    chatBox.classList.remove("-translate-y-5");
+    chatBox.classList.remove("translate-y-5");
     chatBox.classList.add("-translate-y-2");
-    chatBox.classList.add("translate-y-0");
     tracing.classList.remove("translate-y-6");
     tracing.classList.add("-translate-y-1");
     tracing.classList.remove("scale-[0]");
