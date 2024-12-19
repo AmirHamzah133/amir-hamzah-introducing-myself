@@ -16,6 +16,7 @@ module.exports = {
         supersmall: '340px',
         xsmall: '360px',
         smaller: '450px',
+        tabletsmall: '768px',
         tablet: '981px',
       },
 
