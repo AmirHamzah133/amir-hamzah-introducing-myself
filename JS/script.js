@@ -36,7 +36,7 @@ card.addEventListener("mousemove", function(){
     imgCard.classList.add("brightness-[70%]");
     imgCard.classList.add("scale-[1.3]");
     imgCard.classList.add("blur-[4px]");
-    imgCard.classList.remove("grayscale-[100%]");
+    // imgCard.classList.remove("grayscale-[100%]");
     pcard.classList.remove("translate-y-40");
     pcard.classList.add("translate-y-0");
     pcard.classList.remove("hidden");
@@ -47,7 +47,7 @@ card.addEventListener("mousemove", function(){
         pcard.classList.remove("translate-y-0");
         pcard.classList.add("translate-y-40");
         imgCard.classList.remove("brightness-[70%]");
-        imgCard.classList.add("grayscale-[100%]");
+        // imgCard.classList.add("grayscale-[100%]");
         imgCard.classList.remove("scale-[1.3]");
         imgCard.classList.remove("blur-[4px]");
         overlayBlack.classList.remove("opacity-40");
@@ -64,7 +64,7 @@ cardTwo.addEventListener("mousemove", function(){
     overlayBlackTwo.classList.add("opacity-40");
     imgCardTwo.classList.add("scale-[1.3]");
     imgCardTwo.classList.add("brightness-[70%]");
-    imgCardTwo.classList.remove("grayscale-[100%]");
+    // imgCardTwo.classList.remove("grayscale-[100%]");
     imgCardTwo.classList.add("blur-[4px]");
     pCardTwo.classList.remove("translate-y-40");
     pCardTwo.classList.add("translate-y-0");
@@ -74,7 +74,7 @@ cardTwo.addEventListener("mousemove", function(){
         overlayBlackTwo.classList.add("opacity-0");
         imgCardTwo.classList.remove("blur-[4px]");
         imgCardTwo.classList.remove("scale-[1.3]");
-        imgCardTwo.classList.add("grayscale-[100%]");
+        // imgCardTwo.classList.add("grayscale-[100%]");
         pCardTwo.classList.remove("translate-y-0");
         pCardTwo.classList.add("translate-y-40");
         
@@ -92,7 +92,7 @@ cardThree.addEventListener("mousemove", function(){
     imgCardThree.classList.add("blur-[4px]");
     imgCardThree.classList.add("brightness-[70%]");
     imgCardThree.classList.add("scale-[1.3]");
-    imgCardThree.classList.remove("grayscale-[100%]");
+    // imgCardThree.classList.remove("grayscale-[100%]");
     pCardThree.classList.remove("translate-y-40");
     pCardThree.classList.add("translate-y-0");
     
@@ -102,7 +102,7 @@ cardThree.addEventListener("mousemove", function(){
         imgCardThree.classList.remove("scale-[1.3]");
         imgCardThree.classList.remove("blur-[4px]");
         imgCardThree.classList.remove("brightness-[70%]");
-        imgCardThree.classList.add("grayscale-[100%]");
+        // imgCardThree.classList.add("grayscale-[100%]");
         pCardThree.classList.remove("translate-y-0");
         pCardThree.classList.add("translate-y-40");
     })
