@@ -1788,6 +1788,14 @@ video {
     width: 100%;
   }
 
+  .max-md\:w-\[80\%\] {
+    width: 80%;
+  }
+
+  .max-md\:w-\[85\%\] {
+    width: 85%;
+  }
+
   .max-md\:flex-wrap-reverse {
     flex-wrap: wrap-reverse;
   }
