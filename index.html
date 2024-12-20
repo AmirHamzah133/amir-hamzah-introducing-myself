@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amir Hamzah</title>
     <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Funnel+Display:wght@300..800&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Noto+Serif+JP:wght@220..900&family=Space+Grotesk:wght@300..700&display=swap');
@@ -222,7 +223,6 @@
                 </ul>
     </div>
 
-
     <section id="home" class="pt-28 max-md:pt-24 mb-20">
         <div class="container">
             <div class="flex max-md:flex-wrap-reverse">
@@ -260,13 +260,13 @@
                     <div class="w-full flex flex-wrap justify-center gap-x-6 gap-y-10 mb-20">
                         
                         
-                        <div class="w-[310px] h-auto rounded-xl bg-[#242424] border border-[#3b3b3b] overflow-hidden">
+                        <div data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in-out" class="w-[310px] h-auto rounded-xl bg-[#242424] border border-[#3b3b3b] overflow-hidden">
                             
                                 <div id="card" class="relative flex flex-wrap justify-center w-full max-h-[190px] overflow-hidden">
                                     <div id="overlayBlack" class="opacity-0 absolute z-[5] w-full h-full bg-black transition duration-[400ms] ease-in-out">
                                     </div>
 
-                                        <img id="imgCard" src="assets\img\Web Programming.jpg" alt="new" class="w-full h-[190px] bg-cover bg-center grayscale-[0%] brightness-[90%] transition duration-300 ease-in-out">
+                                        <img id="imgCard" src="assets\img\Web Programming.jpg" alt="new" class="w-full h-[190px] bg-cover bg-center grayscale-[0%]brightness-[90%] transition duration-300 ease-in-out">
                                     
                                     <p id="pCard" class="max-w-[290px] select-none absolute h-full translate-y-40 flex items-center top-0 z-10 text-center text-sm text-white font-semibold transition duration-[450ms] ease-in-out">Coding di JavaScript, DOM Manipulation.</p>
                             </div>
@@ -287,7 +287,7 @@
                         
 
                         
-                    <div class="w-[310px] h-auto rounded-xl bg-[#242424] border border-[#3b3b3b] overflow-hidden">
+                    <div data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in-out" class="w-[310px] h-auto rounded-xl bg-[#242424] border border-[#3b3b3b] overflow-hidden">
                         
                             <div id="cardTwo" class="relative flex flex-wrap justify-center w-full max-h-[190px] overflow-hidden">
                                     <div id="overlayBlackTwo" class="opacity-0 absolute z-[5] w-full h-full bg-black transition duration-[400ms] ease-in-out">
@@ -313,7 +313,7 @@
                     </div>
                         
                     
-                    <div class="w-[310px] h-auto rounded-xl bg-[#242424] border border-[#3b3b3b] overflow-hidden">
+                    <div data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in-out" class="w-[310px] h-auto rounded-xl bg-[#242424] border border-[#3b3b3b] overflow-hidden">
                         
                             <div id="cardThree" class="relative flex flex-wrap justify-center w-full max-h-[190px] overflow-hidden">
                                     <div id="overlayBlackThree" class="opacity-0 absolute z-[5] w-full h-full bg-black transition duration-[400ms] ease-in-out"></div>
@@ -350,12 +350,14 @@
         <div class="container">
     
         <div class="pt-14 pb-10">
-            <h2 class="text-center text-lg font-semibold mb-2">Skills & Expertise</h2>
-            <h2 class="text-center text-3xl font-bold mb-6">Generic Overview</h2>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" class="">
+                <h2 data-aos-easing="ease-in-out" class="text-center text-lg font-semibold mb-2">Skills & Expertise</h2>
+                <h2 data-aos-easing="ease-in-out" class="text-center text-3xl font-bold mb-6">Generic Overview</h2>
+            </div>
             <div class="w-full flex flex-wrap justify-center max-lg:flex-col gap-3">
 
             <div class="w-full flex flex-wrap gap-3 justify-center">
-                <div id="codeSkillsOne" class="w-1/3 max-md:w-[85%] h-[90px] rounded-xl flex gap-3 items-center bg-primary px-6 py-2">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" id="codeSkillsOne" class="w-1/3 max-md:w-[85%] h-[90px] rounded-xl flex gap-3 items-center bg-primary hover:scale-[1.025] px-6 py-2 transition duration-200 ease-in-out relative cursor-pointer">
 
                     <div class="mr-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
@@ -370,7 +372,7 @@
 
                 </div>
 
-                <div id="codeSkillsTwo" class="w-1/3 max-md:w-[85%] h-[90px] rounded-xl flex gap-3 items-center bg-primary px-6 py-2">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" id="codeSkillsTwo" class="w-1/3 max-md:w-[85%] h-[90px] rounded-xl flex gap-3 items-center bg-primary hover:scale-[1.025] px-6 py-2 transition duration-200 ease-in-out relative cursor-pointer">
 
                     <div class="mr-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layout"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
@@ -383,7 +385,7 @@
                     </div>
 
                 </div> 
-                <div id="codeSkillsThree" class="w-1/3 max-md:w-[85%] h-[90px] rounded-xl flex gap-3 items-center bg-primary px-6 py-2">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" id="codeSkillsThree" class="w-1/3 max-md:w-[85%] h-[90px] rounded-xl flex gap-3 items-center bg-primary hover:scale-[1.025] px-6 py-2 transition duration-200 ease-in-out relative cursor-pointer">
 
                     <div class="mr-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
@@ -396,7 +398,7 @@
                     </div>
 
                 </div>
-                <div id="codeSkillsFour" class="w-1/3 max-md:w-[85%] h-[90px] rounded-xl flex gap-3 items-center bg-primary px-6 py-2">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" id="codeSkillsFour" class="w-1/3 max-md:w-[85%] h-[90px] rounded-xl flex gap-3 items-center bg-primary hover:scale-[1.025] px-6 py-2 transition duration-200 ease-in-out relative cursor-pointer">
 
                     <div class="mr-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
@@ -410,7 +412,7 @@
 
                 </div>
                 
-                <div id="codeSkillsFive" class="w-1/3 max-md:w-[85%] h-[90px] rounded-xl flex gap-3 items-center bg-primary px-6 py-2">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" id="codeSkillsFive" class="w-1/3 max-md:w-[85%] h-[90px] rounded-xl flex gap-3 items-center bg-primary hover:scale-[1.025] px-6 py-2 transition duration-200 ease-in-out relative cursor-pointer">
 
                     <div class="mr-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pen-tool"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
@@ -423,7 +425,7 @@
                     </div>
 
                 </div>
-                <div id="codeSkillsSix" class="w-1/3 max-md:w-[85%] h-[90px] rounded-xl flex gap-3 items-center bg-primary px-6 py-2">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" id="codeSkillsSix" class="w-1/3 max-md:w-[85%] h-[90px] rounded-xl flex gap-3 items-center bg-primary hover:scale-[1.025] px-6 py-2 transition duration-200 ease-in-out relative cursor-pointer">
 
                     <div class="mr-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pen-tool"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
@@ -438,6 +440,19 @@
                 </div>
 
             </div>
+
+            <div class="w-full flex flex-wrap gap-3 justify-center">
+
+                <div class="w-1/4 max-sm:w-[80%] flex flex-wrap justify-center">
+
+                    <div class="mr-2">
+                        <img src="" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
     </section>
     
@@ -447,7 +462,7 @@
         <div class="w-full flex gap-4 justify-center flex-wrap self-center pt-8 pb-16">
 
 
-            <div class="w-1/3 max-md:w-full px-6 mx-2 mb-8 max-tabletsmall:mb-4">
+            <div data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in-out" class="w-1/3 max-md:w-full px-6 mx-2 mb-8 max-tabletsmall:mb-4">
                 <h2 class="font-bold text-lg text-neutral-600">About Me</h2>
                 <h2 class="font-bold text-3xl text-primary mb-4">Seorang Pelajar SMK</h2>
 
@@ -458,7 +473,7 @@
                 <p class="text-base text-gray-500">Seorang pelajar SMK yang hobi dengan bidang olahraga badminton dan bidang IT khususnya programming dengan pengalaman selama lebih dari 4 bulan.</p>
             </div>
 
-            <div class="w-1/3 max-md:w-full mx-2 mt-8 max-tabletsmall:mt-0 px-6 mb-8">
+            <div data-aos="fade-up" data-aos-offset="100" data-aos-duration="800" data-aos-easing="ease-in-out" class="w-1/3 max-md:w-full mx-2 mt-8 max-tabletsmall:mt-0 px-6 mb-8">
 
                 <h1 class="text-xl font-bold mb-4">Let's be Friends!</h1>
                 <p class="text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, provident!</p>
@@ -491,7 +506,7 @@
                 </ul>
             </div>
 
-            <div class="w-1/3 max-md:w-full mx-2 px-6 select-none">
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" class="w-1/3 max-md:w-full mx-2 px-6 select-none">
 
                 <div id="infoDropOneOne" class="w-fit flex items-center cursor-pointer py-1 rounded-lg hover:bg-[#f2f2f2]">
                     <h1 class="text-xl font-bold mr-3">Lihat Selengkapnya</h1>
@@ -518,7 +533,7 @@
                     <p id="pDropOneTwo" class="hidden text-base mt-2 text-gray-500">Ada banyak.</p>
             </div>
 
-            <div class="w-1/3 max-md:w-full mx-2 px-6 select-none">
+            <div data-aos="fade-right" data-aos-duration="1300" data-aos-easing="ease-in-out" class="w-1/3 max-md:w-full mx-2 px-6 select-none">
 
                 <div id="infoDropTwoOne" class="w-fit flex items-center cursor-pointer py-1 rounded-lg hover:bg-[#f2f2f2]">
                     <h1 class="text-xl font-bold mr-3">Biodata Tentang Saya</h1>
@@ -553,11 +568,11 @@
 <section id="gallery" class="bg-slate-100">
     <div class="container">
         <div class="w-full flex flex-wrap self-center justify-center pt-14 items-center">
-            <h1 class="text-2xl font-bold mb-10">Gallery Random (🗿)</h1>
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" class="text-2xl font-bold mb-10">Gallery Random (🗿)</h1>
 
             <div class="w-full flex flex-wrap justify-center gap-x-8 gap-y-10 md:gap-y-12 mb-20">
     
-                    <div class="w-[310px] h-auto rounded-xl bg-[#fdfdfd] shadow-md overflow-hidden">
+                    <div data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out" class="w-[310px] h-auto rounded-xl bg-[#fdfdfd] shadow-md overflow-hidden">
                         
                             <div id="cardGallery" class="relative w-full max-h-[190px] overflow-hidden">
                                 <div id="overlayBlackGallery" class="opacity-0 absolute z-[5] w-full h-full bg-black transition duration-[400ms] ease-in-out">
@@ -578,7 +593,7 @@
                     
 
                     
-                <div class="w-[310px] h-auto rounded-xl bg-[#fdfdfd] shadow-md overflow-hidden">
+                <div data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out" class="w-[310px] h-auto rounded-xl bg-[#fdfdfd] shadow-md overflow-hidden">
                     
                         <div id="cardTwoGallery" class="relative w-full max-h-[190px] overflow-hidden">
                                 <div id="overlayBlackTwo" class="opacity-0 absolute z-[5] w-full h-full bg-black transition duration-[400ms] ease-in-out">
@@ -600,7 +615,7 @@
                 </div>
                     
                 
-                <div class="w-[310px] h-auto rounded-xl bg-[#fdfdfd] shadow-md overflow-hidden">
+                <div data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out" class="w-[310px] h-auto rounded-xl bg-[#fdfdfd] shadow-md overflow-hidden">
                     
                         <div id="cardThreeGallery" class="relative w-full max-h-[190px] overflow-hidden">
                                 <div id="overlayBlackThree" class="opacity-0 absolute z-[5] w-full h-full bg-black transition duration-[400ms] ease-in-out"></div>
@@ -618,7 +633,7 @@
                         </div>
                         
                 </div>
-                <div class="w-[310px] h-auto rounded-xl bg-white shadow-md overflow-hidden">
+                <div data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out" class="w-[310px] h-auto rounded-xl bg-white shadow-md overflow-hidden">
                     
                         <div id="cardFourGallery" class="relative w-full max-h-[190px] overflow-hidden">
                                 <div id="overlayBlackThree" class="opacity-0 absolute z-[5] w-full h-full bg-black transition duration-[400ms] ease-in-out"></div>
@@ -636,7 +651,7 @@
                         </div>
                         
                 </div>
-                <div class="w-[310px] h-auto rounded-xl bg-white shadow-md overflow-hidden">
+                <div data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out" class="w-[310px] h-auto rounded-xl bg-white shadow-md overflow-hidden">
                     
                         <div id="cardFiveGallery" class="relative w-full max-h-[190px] overflow-hidden">
                                 <div id="overlayBlackThree" class="opacity-0 absolute z-[5] w-full h-full bg-black transition duration-[400ms] ease-in-out"></div>
@@ -675,7 +690,7 @@
         <div class="container">
             <div class="pt-10 pb-10">
 
-                <div class="flex flex-wrap justify-center self-center">
+                <div data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out" class="flex flex-wrap justify-center self-center">
                     <div class="w-[60%] max-sm:w-[80%] flex justify-center items-center">
                         <blockquote>
                             <p class="text-2xl text-center font-medium text-primary">"You must understand that there is more than one path to the top of the mountain."<span class="mt-4 block font-normal text-sm text-neutral-400">"Kamu harus mengerti bahwa ada lebih dari satu jalan menuju puncak gunung."</span> <span class="block text-base mt-6">&mdash; Musashi Miyamoto.</span>
@@ -687,6 +702,10 @@
 </section>
     
 <script src="./JS/script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>

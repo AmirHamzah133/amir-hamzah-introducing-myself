@@ -250,3 +250,4 @@ exitChatBoxNotification.addEventListener("click", () => {
     tracing.classList.remove("scale-[1]");
     tracing.classList.add("scale-[0]");
 })
+
