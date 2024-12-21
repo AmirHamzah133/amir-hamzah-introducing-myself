@@ -845,6 +845,10 @@ video {
   margin-top: 4rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .box-content {
   box-sizing: content-box;
 }
@@ -1036,6 +1040,26 @@ video {
 
 .w-\[35\%\] {
   width: 35%;
+}
+
+.w-\[3\%\] {
+  width: 3%;
+}
+
+.w-\[38\%\] {
+  width: 38%;
+}
+
+.w-\[82\%\] {
+  width: 82%;
+}
+
+.w-\[81\%\] {
+  width: 81%;
+}
+
+.w-\[45\%\] {
+  width: 45%;
 }
 
 .min-w-\[\] {
@@ -2156,6 +2180,21 @@ video {
   .max-sm\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .max-sm\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .max-sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .max-sm\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .max-sm\:text-3xl {
