@@ -1927,6 +1927,22 @@ video {
     width: 100%;
   }
 
+  .max-md\:max-w-\[\] {
+    max-width: ;
+  }
+
+  .max-md\:max-w-\[245px\] {
+    max-width: 245px;
+  }
+
+  .max-md\:max-w-\[235px\] {
+    max-width: 235px;
+  }
+
+  .max-md\:max-w-\[240px\] {
+    max-width: 240px;
+  }
+
   .max-md\:flex-wrap-reverse {
     flex-wrap: wrap-reverse;
   }
