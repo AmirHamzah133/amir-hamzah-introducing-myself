@@ -251,9 +251,7 @@ exitChatBoxNotification.addEventListener("click", () => {
     tracing.classList.add("scale-[0]");
 })
 
-const barContainer = document.getElementById('barContainer');
-const barPersentase = document.getElementById('barPersentase');
-const persentaseText = document.getElementById('textPersentase');
+const barContainers = document.querySelectorAll('.bar-container');
 
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
@@ -265,7 +263,7 @@ function isElementInViewport(el) {
     );
 }
 
-function animateProgressBar(targetPercentage) {
+function animateProgressBar(bar, percentageText, targetPercentage) {
     let currentPercentage = 0;
     const interval = setInterval(() => {
         if (currentPercentage >= targetPercentage) {
@@ -273,21 +271,37 @@ function animateProgressBar(targetPercentage) {
             return;
         }
         currentPercentage++;
-        barPersentase.style.width = `${currentPercentage}%`;
-        persentaseText.textContent = `${currentPercentage}%`;
-    }, 25); // Kecepatan, semakin kecil maka semakin cepat
+        bar.style.width = `${currentPercentage}%`;
+        percentageText.textContent = `${currentPercentage}%`;
+    }, 25);
 }
+
+// const barContainers = document.querySelectorAll('.bar-container');
+let animatedBarsCount = 0; // Melacak jumlah progress bar yang sudah dianimasikan
+
+// ... (fungsi isElementInViewport dan animateProgressBar sama seperti sebelumnya)
 
 function handleScroll() {
-    if (isElementInViewport(barContainer)) {
-        // Hapus event listener agar animasi hanya berjalan sekali
-        window.removeEventListener('scroll', handleScroll);
-        animateProgressBar(87); // Target persentase
-    }
+    barContainers.forEach(container => {
+        if (isElementInViewport(container) && !container.dataset.animated) { // Cek juga apakah sudah dianimasi
+            const bar = container.querySelector('.bar-persentase');
+            const percentageText = container.querySelector('.persentase-text');
+            const targetPercentage = parseInt(percentageText.textContent);
+
+            animateProgressBar(bar, percentageText, targetPercentage);
+
+            container.dataset.animated = 'true'; // Tandai sebagai sudah dianimasi
+            animatedBarsCount++;
+
+            // Hapus event listener hanya jika SEMUA bar sudah dianimasi
+            if (animatedBarsCount === barContainers.length) {
+                window.removeEventListener('scroll', handleScroll);
+            }
+        }
+    });
 }
 
-// Tambahkan event listener saat halaman di-scroll
 window.addEventListener('scroll', handleScroll);
 
-// Panggil fungsi handleScroll sekali saat halaman pertama kali dimuat untuk menangani kasus di mana elemen sudah berada di viewport saat pertama kali dimuat.
+// Panggil handleScroll saat load untuk menangani kasus di mana elemen sudah terlihat
 handleScroll();
