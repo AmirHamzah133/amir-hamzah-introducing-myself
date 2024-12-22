@@ -273,7 +273,7 @@ function animateProgressBar(bar, percentageText, targetPercentage) {
         currentPercentage++;
         bar.style.width = `${currentPercentage}%`;
         percentageText.textContent = `${currentPercentage}%`;
-    }, 25);
+    }, 20);
 }
 
 // const barContainers = document.querySelectorAll('.bar-container');
