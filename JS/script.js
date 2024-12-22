@@ -251,3 +251,43 @@ exitChatBoxNotification.addEventListener("click", () => {
     tracing.classList.add("scale-[0]");
 })
 
+const barContainer = document.getElementById('barContainer');
+const barPersentase = document.getElementById('barPersentase');
+const persentaseText = document.getElementById('textPersentase');
+
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.bottom >= 0 &&
+        rect.left <= (window.innerWidth || document.documentElement.clientWidth) &&
+        rect.right >= 0
+    );
+}
+
+function animateProgressBar(targetPercentage) {
+    let currentPercentage = 0;
+    const interval = setInterval(() => {
+        if (currentPercentage >= targetPercentage) {
+            clearInterval(interval);
+            return;
+        }
+        currentPercentage++;
+        barPersentase.style.width = `${currentPercentage}%`;
+        persentaseText.textContent = `${currentPercentage}%`;
+    }, 25); // Kecepatan, semakin kecil maka semakin cepat
+}
+
+function handleScroll() {
+    if (isElementInViewport(barContainer)) {
+        // Hapus event listener agar animasi hanya berjalan sekali
+        window.removeEventListener('scroll', handleScroll);
+        animateProgressBar(87); // Target persentase
+    }
+}
+
+// Tambahkan event listener saat halaman di-scroll
+window.addEventListener('scroll', handleScroll);
+
+// Panggil fungsi handleScroll sekali saat halaman pertama kali dimuat untuk menangani kasus di mana elemen sudah berada di viewport saat pertama kali dimuat.
+handleScroll();
